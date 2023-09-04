@@ -1,5 +1,8 @@
 {
-  "siteId": 8,
-  "namespace": "deco-sites/start",
-  "imports": ["$live/live.gen.ts", "deco-sites/std/live.gen.ts"]
+  "siteId": 2332,
+  "namespace": "deco-sites/benvenuto",
+  "imports": [
+    "$live/live.gen.ts",
+    "deco-sites/std/live.gen.ts"
+  ]
 }
