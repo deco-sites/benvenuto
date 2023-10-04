@@ -11,7 +11,7 @@ export default function Home({
 }: Props) {
   return (
     <header class="lg:container mx-auto md:mx-16 lg:mx-auto mt-8 md:mt-12 mb-28 text-xl md:text-base flex flex-col items-center justify-center">
-      <div class="mb-10 md:mb-20 flex justify-center  border border-black p-4">
+      <div class="mb-10 md:mb-20 flex justify-center ">
         {logo
           ? (
             <img
@@ -27,11 +27,8 @@ export default function Home({
           )}
       </div>
 
-      {
-        //</><div class="font-bold text-3xl lg:text-6xl leading-tight lg:leading-none xl:w-5/6 text-center border border-black p-4">{title}</div>
-      }
 
-      <div class="flex flex-col items-center max-w-md border border-black p-4">
+      <div class="flex flex-col items-center max-w-md border">
         <button
           class="my-3 px-4 py-2 bg-blue-500 text-white rounded-lg text-2xl hover:bg-blue-600 w-full"
           onClick={() => window.location.href = "/reception"}
