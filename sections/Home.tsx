@@ -27,8 +27,7 @@ export default function Home({
           )}
       </div>
 
-
-      <div class="flex flex-col items-center max-w-md border">
+      <div class="flex flex-col items-center max-w-md">
         <button
           class="my-3 px-4 py-2 bg-blue-500 text-white rounded-lg text-2xl hover:bg-blue-600 w-full"
           onClick={() => window.location.href = "/reception"}
