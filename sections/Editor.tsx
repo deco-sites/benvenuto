@@ -3,14 +3,11 @@ import { tableMapData } from "../static/MockedTableObject.tsx";
 
 export interface Props {
   title?: string;
-  //TablesJson?: string;
 }
 
 export default function Editor({
-  //TablesJson = "",
   title = "Editor",
 }: Props) {
-  // const parsedData = JSON.parse(TablesJson);
 
   return (
     <div>
@@ -29,10 +26,10 @@ export default function Editor({
             <div>
               {table.places.map((place) => <p key={place.id}>{place.label}</p>)}
               <img
-              src="../static/tables/greenTable.png"
-              alt={`Table ${table.label}`}
-              class="absolute left-[${table.x}px] top-[${table.y}px] transform rotate-[-${table.rotation}deg]"
-            />
+                src="../static/tables/greenTable.png"
+                alt={`Table ${table.label}`}
+                class="absolute left-[${table.x}px] top-[${table.y}px] transform rotate-[-${table.rotation}deg]"
+              />
             </div>
           </div>
         ))}
