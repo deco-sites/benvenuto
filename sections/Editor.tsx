@@ -8,7 +8,7 @@ export interface Props {
 export default function Editor({
   title = "Editor",
 }: Props) {
-
+  
   return (
     <div>
       <header class="lg:container mx-auto md:mx-16 lg:mx-auto mt-8 md:mt-12 mb-28 text-xl md:text-base flex flex-col items-center justify-center">
@@ -18,18 +18,20 @@ export default function Editor({
           </div>
         </div>
       </header>
+
       <div>
-        <h1>Table Data</h1>
+        <h1>*Table Map*</h1>
         {tableMapData.tables.map((table) => (
           <div key={table.id}>
-            <h2>Table: {table.label}</h2>
-            <div>
+            <h2>Table: {table.x}</h2>
+
+            <img
+              src="/tables/greenTable.png"
+              alt={`Table ${table.label}`}
+              style={`position: absolute; left: ${table.x}px; top: ${table.y}px; transform: rotate(-${table.rotation}deg);`}
+            />
+            <div> 
               {table.places.map((place) => <p key={place.id}>{place.label}</p>)}
-              <img
-                src="../static/tables/greenTable.png"
-                alt={`Table ${table.label}`}
-                class="absolute left-[${table.x}px] top-[${table.y}px] transform rotate-[-${table.rotation}deg]"
-              />
             </div>
           </div>
         ))}

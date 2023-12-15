@@ -74,6 +74,48 @@ export const tableMapData = {
           },
         ],
       },
+      {
+        class: "models.RoundTable",
+        id: 2,
+        label: "02",
+        rotation: 0,
+        x: 300,
+        y: 100,
+        places: [
+          {
+            id: 3,
+            label: "01A",
+            occupied: false,
+            rotation: 0.071525864538728,
+            x: -52,
+            y: -19,
+          },
+          {
+            id: 4,
+            label: "01B",
+            occupied: false,
+            rotation: 45.2975697722287,
+            x: -23,
+            y: -50,
+          },
+          {
+            id: 5,
+            label: "01C",
+            occupied: false,
+            rotation: 90.07152586453873,
+            x: 19,
+            y: -52,
+          },
+          {
+            id: 6,
+            label: "01D",
+            occupied: false,
+            rotation: 135.29756977222868,
+            x: 50,
+            y: -23,
+          }
+        ],
+      }
     ],
   };
   
