@@ -1,4 +1,3 @@
-import type { Image as DecoImage } from "deco-sites/std/components/types.ts";
 import { tableMapData } from "../static/MockedTableObject.tsx";
 import { useSignal } from "@preact/signals";
 import { useState } from "preact/hooks";
@@ -49,7 +48,7 @@ export default function Editor({
       </div>
 
       {/*Signal*/}
-      <div  class="p-2">
+      <div class="p-2">
         <button onClick={() => countSignal.value--}>
           -
         </button>
@@ -60,7 +59,7 @@ export default function Editor({
       </div>
 
       {/*useState*/}
-      <div  class="p-2">
+      <div class="p-2">
         <button onClick={() => setcountState(countState - 1)}>
           -
         </button>
